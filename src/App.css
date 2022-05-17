@@ -1,38 +1,148 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body,
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  height: 100vh;
+  width: 100vw;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+canvas {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #1a1a1a;
+  z-index: -1;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.App {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
+
+.red-text {
+  color: #ff4d5a;
+  font-weight: 700;
+}
+
+#container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#main {
+  border: 1px solid #fff;
+  border-radius: 8px;
+  width: 425px;
+  min-height: 525px;
+  background-color: #1a1a1a;
+}
+
+#main .main-header {
+  text-align: center;
+  border-bottom: 1px solid #fff;
+  padding: 16px;
+}
+
+#main .main-header h1 {
+  margin-bottom: 8px;
+}
+
+#main .main-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#main .main-content h3 {
+  padding: 24px;
+  font-size: 24px;
+}
+
+#main .main-content div a {
+  text-decoration: none;
+  color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 8px;
+  padding: 8px;
+  border-radius: 8px;
+  -webkit-transition: background-color 0.2s ease;
+  transition: background-color 0.2s ease;
+  border-bottom: 3px solid transparent;
+}
+
+#main .main-content div a svg {
+  height: 32px;
+  width: 32px;
+  margin-right: 12px;
+}
+
+#main .main-content div a:hover {
+  cursor: pointer;
+  background-color: #2f2f2f;
+  border-bottom: 3px solid #ff4d5a;
+}
+
+#details {
+  border: 1px solid #fff;
+  border-left: none;
+  border-radius: 0 8px 8px 0;
+  width: 575px;
+  height: 475px;
+  background-color: #1a1a1a;
+}
+
+#details h2 {
+  text-align: center;
+  padding: 18px;
+}
+
+#details ul {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  list-style: square;
+  height: 50%;
+  margin-left: 100px;
+}
+
+#details ul li {
+  font-size: 24px;
+  padding: 4px;
+}
+/*# sourceMappingURL=App.css.map */
