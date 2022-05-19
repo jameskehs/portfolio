@@ -18,7 +18,7 @@ const projectData = [
     demoLink: "https://guess-your-library.herokuapp.com/",
     details: {
       name: "Spotify Guessing Game",
-      desc: "A game where you try to guess your favorite songs. Using the Spotify API, the users account is linked and their liked songs are grabbed. Small snippets of these songs are played and the user has 5 attempts to guess the correct song.",
+      desc: "A game where you try to guess your favorite songs. Using the Spotify API, the users account is linked and their liked songs are grabbed. Small snippets of these songs are played and the user has 5 attempts to guess the correct song. NOTE: Email must be authorized by me for Spotify API to work",
       techStack: ["HTML5", "CSS3", "Javascript", "SASS", "React", "APIs", "Node.js", "Express"],
       images: ["./Images/SpotifyGame1.png", "./Images/SpotifyGame2.png"],
     },
