@@ -9,6 +9,7 @@ const projectData = [
       desc: "A game that uses the Yelp API to help determine where to eat out. Users will enter a zip code and neaby restaurants will be pulled. Users will then play a Tinder like game to choose 10 restaurants they like and will then choose between the ones they liked.",
       techStack: ["HTML5", "CSS3", "Javascript", "SASS", "React", "APIs", "Node.js", "Express"],
       images: ["./Images/YelpApp.png", "./Images/YelpApp2.png"],
+      placeholder: "./Images/YelpAppPlaceholder.png",
     },
   },
   {

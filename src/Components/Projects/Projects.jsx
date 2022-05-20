@@ -1,9 +1,10 @@
 import "./Projects.css";
 import projectData from "./ProjectData";
 import { useEffect, useState } from "react";
+import ImageLoad from "../ImageLoad";
 
 const Projects = () => {
-  const [details, setDetails] = useState({ name: "", desc: "", techStack: [], images: [] });
+  const [details, setDetails] = useState({ name: "", desc: "", techStack: [], images: [], placeholder: "" });
 
   useEffect(() => {
     const detailDiv = document.getElementById("details");
@@ -55,9 +56,7 @@ const Projects = () => {
         </div>
         <div className="image-container">
           {details.images.map((image, index) => {
-            return (
-              <img src={image} alt="" className={details.name === "Bill Tracker" ? "project-image-thmb bill-tracker-img" : "project-image-thmb"} />
-            );
+            return <ImageLoad src={image} placeholder="./Images/Placeholder.jpg" alt="Project" />;
           })}
         </div>
       </div>
