@@ -23,7 +23,7 @@ const ImageLoad = React.memo(({ src, placeholder, alt = "" }) => {
         transition: "opacity .15s linear",
       }}
       alt={alt}
-      className="project-image-thmb"
+      className={src === "./Images/BillTracker.png" ? "bill-tracker-img project-image-thmb" : "project-image-thmb"}
     />
   );
 });
